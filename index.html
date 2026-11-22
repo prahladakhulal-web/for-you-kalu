@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For My Love | A Little Universe</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"></div><div id="petals" aria-hidden="true"></div>
+<button id="musicBtn" class="music-btn" type="button" aria-label="Play or pause music">♫ Music Off</button>
+<audio
+  id="song"
+  src="https://files.catbox.moe/xqzjbk.mp3"
+  loop
+  preload="none">
+</audio>
+<main>
+<section id="welcome" class="scene active">
+  <div class="overline">A LITTLE UNIVERSE, JUST FOR YOU</div><div class="rose-icon">🌹</div>
+  <h1>For My <i>Love</i></h1><p class="lead">Some stories are written in the stars. This one is written in my heart.</p>
+  <div class="glass unlock-card"><span class="eyebrow">OUR LITTLE SECRET</span><input id="password" type="password" placeholder="Enter our secret code" aria-label="Secret code"><p id="error" class="error" aria-live="polite"></p><button id="unlockBtn" class="primary">Unlock My Heart ♡</button><small>Hint: Our special number</small></div>
+</section>
+<section id="intro" class="scene"><div class="overline">CHAPTER ONE</div><div class="big-heart">♥</div><h1>Every love story is beautiful.<br><i>Ours is my favorite.</i></h1><p class="lead">I made this little world for you, one memory at a time.</p><button class="primary next" data-next="counter">Enter Our Story ✨</button></section>
+<section id="counter" class="scene"><div class="overline">EVERY SECOND COUNTS</div><h1>Since <i>Our Beginning</i></h1><p class="lead">And still, every moment feels like a new beginning.</p><div class="count-grid"><div><b id="days">0</b><span>Days</span></div><div><b id="hours">00</b><span>Hours</span></div><div><b id="minutes">00</b><span>Minutes</span></div><div><b id="seconds">00</b><span>Seconds</span></div></div><p id="counterNote" class="hint"></p><button class="primary next" data-next="gallery">Our Memories →</button></section>
+<section id="gallery" class="scene wide"><div class="overline">OUR FAVORITE MOMENTS</div><h1>Little <i>Memories</i></h1><p class="lead">Ten little windows into our story. Tap any card to open it.</p><div id="photoGrid" class="photo-grid"></div><button class="primary next" data-next="letter">A Letter For You 💌</button></section>
+<section id="letter" class="scene"><div class="overline">WORDS I KEPT FOR YOU</div><h1>My Dearest <i>Love</i></h1><button id="envelope" class="envelope" type="button" aria-label="Open love letter"><span class="envelope-flap"></span><span class="seal">♥</span></button><p id="letterHint" class="hint">Tap the envelope to open your letter</p><article id="letterPaper" class="letter-paper" hidden><div class="eyebrow">TO MY FAVORITE PERSON</div><p>My love,</p><p>Somehow, the ordinary moments became my favorite memories because you were in them.</p><p>I cannot promise that every day will be perfect. But I can promise to keep caring, listening, laughing, and making more beautiful memories with you.</p><p>In every chapter, I hope we keep choosing kindness and choosing each other.</p><p class="signature">Forever yours ♡</p></article><button class="primary next" data-next="heart">Touch My Heart ♥</button></section>
+<section id="heart" class="scene"><div class="overline">A THOUSAND LITTLE REASONS</div><h1>Touch My <i>Heart</i></h1><button id="touchHeart" class="touch-heart" type="button" aria-label="Show another love message">♥</button><p id="heartMessage" class="quote" aria-live="polite">Tap the heart. It has something to tell you.</p><button class="primary next" data-next="stars">Make A Wish ✨</button></section>
+<section id="stars" class="scene"><div class="starfield" id="starfield" aria-hidden="true"></div><div class="overline">UNDER THE SAME SKY</div><h1>One Sky. <i>Two Hearts.</i></h1><p class="lead">Even when we are far apart, we can still wish upon the same stars.</p><button id="wishBtn" class="wish-star" type="button" aria-label="Make a wish">✦</button><p id="wishMessage" class="quote" aria-live="polite">Touch the glowing star to make a wish.</p><button class="primary next" data-next="finale">One Last Surprise 🎁</button></section>
+<section id="finale" class="scene"><div class="overline">THE FINAL CHAPTER</div><h1>A Gift <i>For You</i></h1><button id="gift" class="gift" type="button" aria-label="Open surprise gift"><span class="gift-lid"></span><span class="gift-box"></span><span class="gift-ribbon"></span></button><p class="hint">Tap the gift to open it</p><div id="finalMessage" class="final-message" hidden><div class="big-heart">♥</div><h2>I Love You ♡</h2><p>Will you keep making beautiful memories with me?</p><button id="kissBtn" class="primary">Send a Kiss Back 💋</button><p id="kissMessage" aria-live="polite"></p><button id="restartBtn" class="ghost">Experience Again ↺</button></div></section>
+</main>
+<div id="lightbox" class="lightbox" hidden><button id="closeLightbox" class="close" aria-label="Close photo">×</button><img id="lightboxImg" alt="Our memory"><p id="lightboxCaption"></p></div>
+<div class="progress" id="progress" aria-label="Story progress"></div>
+<script src="script.js"></script>
+</body></html>
